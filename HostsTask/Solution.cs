@@ -1,6 +1,11 @@
 namespace HostsTask;
 public class Solution
 {
+    // Решенеие:
+    // Создаем дерево забаненных хостов B[]
+    // Потом пробегаемся по каждому хосту из A[]
+    // Если в хосте A[i] содержится ветвь из дерева, то данный хост - забанненный
+    // Иначе пользователь может в него зайти
     public static int[] solution(string[] A, string[] B)
     {
         PrefixTree tree = new PrefixTree(B);
